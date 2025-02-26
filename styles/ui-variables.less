@@ -1,0 +1,144 @@
+@import "base/ui-variables";
+
+@gray-base: #ffffff;
+@gray-darker: darken(@gray-base, 13.5%);
+@gray-dark: darken(@gray-base, 20%);
+@gray: darken(@gray-base, 33.5%);
+@gray-light: darken(@gray-base, 46.7%);
+@gray-lighter: darken(@gray-base, 92.5%);
+@white: #0a0a0a;
+@dark-base: #0D0E0F;
+
+@accent-primary: #007AFF;
+@accent-primary-dark: darken(@accent-primary, 10%);
+
+@background-primary: #212121;
+@background-off-primary: #212121;
+@background-secondary: #121212;
+@background-tertiary: #6d7987;
+
+@border-color-primary: lighten(@background-primary, 10%);
+@border-color-secondary: lighten(@background-secondary, 10%);
+@border-color-tertiary: lighten(@background-tertiary, 10%);
+@border-color-divider: @border-color-secondary;
+
+@text-color: #eee;
+@text-color-subtle: fadeout(@text-color, 20%);
+@text-color-very-subtle: fadeout(@text-color, 40%);
+@text-color-inverse: white;
+@text-color-inverse-subtle: fadeout(@text-color-inverse, 20%);
+@text-color-inverse-very-subtle: fadeout(@text-color-inverse, 50%);
+@text-color-heading: #fff;
+
+@text-color-link: @accent-primary;
+@text-color-link-hover: @accent-primary-dark;
+@text-color-link-active: @accent-primary-dark;
+
+@btn-default-bg-color: lighten(@background-primary, 5%);
+@dropdown-default-bg-color: #404040;
+
+@input-bg: #2e2e2e;
+@input-border: @border-color-divider;
+
+@list-bg: #333;
+@list-border: #383838;
+@list-selected-color: @text-color-inverse;
+@list-focused-color: @text-color;
+
+@toolbar-background-color: #121212;
+@panel-background-color: #121212;
+.sheet-toolbar {
+	border-bottom: 1px solid @border-color-divider;
+	box-shadow: none;
+}
+
+.thread-icon:not(.thread-icon-unread):not(.thread-icon-star) {
+	-webkit-filter: invert(100%);
+}
+
+.mail-label {
+	-webkit-filter: contrast(110%) brightness(85%);
+}
+#message-list .message-item-wrap .message-item-white-wrap {
+	box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.28),
+		0 1px 1.5px rgba(255, 255, 255, 0.08);
+	background-color: #fff;
+	color: #0a0a0a;
+}
+
+.message-item-area .participants span,
+.message-item-area .message-participants .from-contact,
+.message-item-area .message-participants .collapsed-participants .to-contact,
+.message-item-area span iframe body,
+.message-item-area span iframe html {
+	color: #0a0a0a !important;
+}
+
+.thread-list .list-item:not(.unread):not(.selected):not(.focused) {
+	color: #aaa;
+}
+
+.message-participants .expanded-participants .from-contact .participant-primary {
+    color: @dark-base;
+}
+
+.participant-label.to-label {
+    color: @dark-base;
+    font-weight: bold !important;
+}
+
+.header-label {
+    color: @dark-base;
+    font-weight: bold !important;
+}
+
+.message-time {
+    color: @dark-base !important;
+}
+
+.header-name {
+    color: @dark-base;
+}
+
+.header-toggle-control img.content-mask {
+	background: @accent-primary !important;
+}
+
+.participant .participant-secondary {
+	color: @accent-primary !important;
+}
+
+.participant-label.reply-to-label {
+	color: @dark-base !important;
+  font-weight: bold !important;
+}
+
+.participant-primary {
+	color: @dark-base !important; 
+}
+
+.composer-participant-field .participant .participant-primary {
+	color: #fff !important;
+}
+
+.list-container .list-item.focused {
+	background-color: rgba(102, 102, 102, 0.35) !important;
+	border-bottom: none !important;
+	border-left: 5px solid @accent-primary;
+}
+
+.outline-view .item.selected {
+	color: #fff;
+  text-shadow: 0 0 #fff;
+  border-left: 2px solid @accent-primary;
+  padding-left: 5px;
+}
+
+.outline-view .item.selected img.content-mask {
+	background: #fff !important;
+}
+
+html,
+body {
+	color: #0a0a0a !important;
+}
